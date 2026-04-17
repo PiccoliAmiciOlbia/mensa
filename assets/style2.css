@@ -47,6 +47,12 @@ header h1 {
     background: transparent; /* Fondo trasparente per vedere lo sfondo body */
     border-bottom: none;
     margin-top: 10px;
+    position: sticky;
+    top: 0
+}
+.today-btn {
+    position: sticky;
+    top: 100px
 }
 .calendar-container {
     display: flex;
