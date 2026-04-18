@@ -60,10 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dayName = daysWeek[date.getDay()];
                 const menu = (dayName === "sabato" || dayName === "domenica") ? null : menuData[`settimana_${weekNum}`][dayName];
                 const coloriSettimana = [
-                    "160, 80, 48",  // Lunedì (Cotto)
-                    "112, 64, 32",  // Martedì (Verde)
-                    "80, 96, 80",  // Mercoledì (Blu)
-                    "170, 160, 100",  // Mercoledì (Blu)
+                    "199, 153, 153",  // Lunedì (Cotto)
+                    "153, 177, 199",  // Martedì (Verde)
+                    "166, 199, 153",  // Mercoledì (Blu)
+                    "194, 196, 144",  // Mercoledì (Blu)
+                    "199, 154, 121",  // Mercoledì (Blu)
+                    "180, 175, 180",  // Mercoledì (Blu)
+                    "180, 175, 180",  // Mercoledì (Blu)
                     // ...continua per gli altri giorni
                 ];
                 const color = coloriSettimana[i % coloriSettimana.length];
