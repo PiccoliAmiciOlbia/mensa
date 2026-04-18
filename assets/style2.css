@@ -25,6 +25,7 @@ body {
     background-image: linear-gradient(rgba(var(--bg-rgb), 1) 10%, rgba(var(--bg-rgb), 0.4) 100%, rgba(var(--bg-rgb), 0) 81%), url("images/tovaglia.jpg");
     */
     background-size: cover;
+    overflow-x: hidden;
 }
 .sole {
     position: absolute;
