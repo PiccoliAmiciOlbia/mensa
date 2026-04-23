@@ -15,7 +15,7 @@ body {
     font-family: sans-serif;
     --bg-rgb: 22, 200, 222;
     /* background-color: var(--bg-color); */
-    background-color: rgb(58 200 255);
+    background-color: rgb(58 200 255 / 30%);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ body {
     width: 83%;
     z-index: -1;
     top: -30px;
-    animation: movimentoSole 60s ease-in-out infinite;
+    /* animation: movimentoSole 60s ease-in-out infinite; */
 }
 
 @keyframes movimentoSole {
@@ -45,11 +45,11 @@ body {
 }
 .occhiali {
     position: absolute;
-    left: 60px;
+    left: -8px;
     width: 63%;
     z-index: -1;
-    top: 350px;
-    animation: movimentoocchiali 60s ease-in-out infinite;
+    bottom: 0;
+    /* animation: movimentoocchiali 60s ease-in-out infinite; */
 }
 
 @keyframes movimentoocchiali {
@@ -60,8 +60,9 @@ body {
     100%   { transform: translate(10vw, 5vh) scale(0.9); }
 }
 .ciliegia {
-    top: -2vh;
+    bottom: 178px;
     position: absolute;
+    right: -49px;
     width: 61%;
     z-index: -1;
     cursor: grab;
@@ -74,7 +75,7 @@ body {
 
     /* Assicuriamoci che transform-origin sia al centro per uno scale corretto */
     transform-origin: center center;
-    animation: movimentoCiliegia 50s ease-in-out infinite;
+    /* animation: movimentoCiliegia 50s ease-in-out infinite; */
 }
 
 @keyframes movimentoCiliegia {
@@ -86,10 +87,10 @@ body {
 .gelato {
     position: absolute;
     width: 50%;
-    left: 20%;
+    left: 65%;
     top: 117px;
     z-index: -1; /* Sopra tutti */
-    animation: movimentoGelato 100s linear infinite; /* Usiamo linear per un movimento più costante */
+    /* animation: movimentoGelato 100s linear infinite; */ /* Usiamo linear per un movimento più costante */
 }
 
 @keyframes movimentoGelato {
@@ -381,5 +382,6 @@ h3 {
 main {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .no-service { text-align: center; color: rgba(255,255,255,0.5); font-style: italic; font-size: 1rem; }
