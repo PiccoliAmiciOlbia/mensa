@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     i++;
 
                 }
-                    document.querySelector('#today').addEventListener('click', () => {
-                        setTimeout(() => goToIndex(startIndex), 100);
-                    } );
+                document.querySelector('#today').addEventListener('click', () => {
+                    setTimeout(() => goToIndex(startIndex), 100);
+                } );
 
                 setTimeout(() => goToIndex(startIndex), 100);
                 setupInteraction();
@@ -72,51 +72,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 const color = coloriSettimana[i % coloriSettimana.length];
                 const primo =
                     menu?.['primo'].includes("Pasta al pomodoro") ?`url('images/pastapomodoro.jpg')`:
-                    menu?.['primo'].includes("Insalata di riso") ?`url('images/insalatariso.jpg')`:
-                    menu?.['primo'].includes("Gnocchi di patate") ?`url('images/gnocchi.jpg')`:
-                    menu?.['primo'].includes("Pizza") ?`url('images/pizza.jpg')`:
-                    menu?.['primo'].includes("Minestra di pasta") ?`url('images/minestrapatate.jpg')`:
-                    menu?.['primo'].includes("Pasta all'olio") ?`url('images/pastaolio.jpg')`:
-                    menu?.['primo'].includes("Risotto alle carote") ?`url('images/risottocarote.jpg')`:
-                    menu?.['primo'].includes("Torta di ricotta") ?`url('images/tortasalata.jpg')`:
-                    menu?.['primo'].includes("Lasagna") ?`url('images/lasagna.jpg')`:
-                    menu?.['primo'].includes("Pasta alle zucchine") ?`url('images/pastazucchine.jpg')`:
-                    menu?.['primo'].includes("Pastina in brodo") ?`url('images/minestra.jpg')`:
-                    menu?.['primo'].includes("Riso all'olio") ?`url('images/risobianco.jpg')`:
-                    menu?.['primo'].includes("Passato di legumi") ?`url('images/legumi2.jpg')`:
-                    menu?.['primo'].includes("Pasta al pesto") ?`url('images/pesto.jpg')`:
-                    `url('images/primo.jpg')`
+                        menu?.['primo'].includes("Insalata di riso") ?`url('images/insalatariso.jpg')`:
+                            menu?.['primo'].includes("Gnocchi di patate") ?`url('images/gnocchi.jpg')`:
+                                menu?.['primo'].includes("Pizza") ?`url('images/pizza.jpg')`:
+                                    menu?.['primo'].includes("Minestra di pasta") ?`url('images/minestrapatate.jpg')`:
+                                        menu?.['primo'].includes("Pasta all'olio") ?`url('images/pastaolio.jpg')`:
+                                            menu?.['primo'].includes("Risotto alle carote") ?`url('images/risottocarote.jpg')`:
+                                                menu?.['primo'].includes("Torta di ricotta") ?`url('images/tortasalata.jpg')`:
+                                                    menu?.['primo'].includes("Lasagna") ?`url('images/lasagna.jpg')`:
+                                                        menu?.['primo'].includes("Pasta alle zucchine") ?`url('images/pastazucchine.jpg')`:
+                                                            menu?.['primo'].includes("Pastina in brodo") ?`url('images/minestra.jpg')`:
+                                                                menu?.['primo'].includes("Riso all'olio") ?`url('images/risobianco.jpg')`:
+                                                                    menu?.['primo'].includes("Passato di legumi") ?`url('images/legumi2.jpg')`:
+                                                                        menu?.['primo'].includes("Pasta al pesto") ?`url('images/pesto.jpg')`:
+                                                                            `url('images/primo.jpg')`
                 const secondo =
                     menu?.['secondo']?.includes("Frittata") ?`url('images/frittata.jpg')`:
-                    menu?.['secondo']?.includes("Platessa gratinata") ?`url('images/platgratinata.jpg')`:
-                    menu?.['secondo']?.includes("Bocconcini di petto") ?`url('images/bocconcini.jpg')`:
-                    menu?.['secondo']?.includes("Prosciutto cotto") ?`url('images/prosciutto.jpg')`:
-                    menu?.['secondo']?.includes("Scaloppine di maiale") ?`url('images/scalmaiale.jpg')`:
-                    menu?.['secondo']?.includes("Sogliola o Platessa") ?`url('images/sogliolaoplatessa.jpg')`:
-                    menu?.['secondo']?.includes("Formaggio tenero") ?`url('images/formaggio.jpg')`:
-                    menu?.['secondo']?.includes("Scaloppine di tacchino") ?`url('images/scaltacchino.jpg')`:
-                    menu?.['secondo']?.includes("Filetti di merluzzo o platessa al limone") ?`url('images/filettilimone.jpg')`:
-                    menu?.['secondo']?.includes("Involtini di prosciutto") ?`url('images/involtiniprosciutto.jpg')`:
-                    menu?.['secondo']?.includes("Polpettine di pesce") ?`url('images/polpettinepesce.jpg')`:
-                    menu?.['secondo']?.includes("Caprese") ?`url('images/caprese.jpg')`:
-                    menu?.['secondo']?.includes("(frittata o strapazzato)") ?`url('images/uovo.jpg')`:
-                    menu?.['secondo']?.includes("Polpettine di vitellone") ?`url('images/polpettineforno.jpg')`:
-                    menu?.['secondo']?.includes("Patate al forno") ?`url('images/patate.jpg')`:
-                    menu?.['secondo']?.includes("Arista di maiale") ?`url('images/arista.jpg')`:
-                    menu?.['secondo']?.includes("Insalata di pollo") ?`url('images/insalatapollo.jpg')`:
-                    menu?.['secondo']?.includes("Arrosto di tacchino") ?`url('images/arrostotacchino.jpg')`:
-                        `url('images/secondo.jpg')`;
+                        menu?.['secondo']?.includes("Platessa gratinata") ?`url('images/platgratinata.jpg')`:
+                            menu?.['secondo']?.includes("Bocconcini di petto") ?`url('images/bocconcini.jpg')`:
+                                menu?.['secondo']?.includes("Prosciutto cotto") ?`url('images/prosciutto.jpg')`:
+                                    menu?.['secondo']?.includes("Scaloppine di maiale") ?`url('images/scalmaiale.jpg')`:
+                                        menu?.['secondo']?.includes("Sogliola o Platessa") ?`url('images/sogliolaoplatessa.jpg')`:
+                                            menu?.['secondo']?.includes("Formaggio tenero") ?`url('images/formaggio.jpg')`:
+                                                menu?.['secondo']?.includes("Scaloppine di tacchino") ?`url('images/scaltacchino.jpg')`:
+                                                    menu?.['secondo']?.includes("Filetti di merluzzo o platessa al limone") ?`url('images/filettilimone.jpg')`:
+                                                        menu?.['secondo']?.includes("Involtini di prosciutto") ?`url('images/involtiniprosciutto.jpg')`:
+                                                            menu?.['secondo']?.includes("Polpettine di pesce") ?`url('images/polpettinepesce.jpg')`:
+                                                                menu?.['secondo']?.includes("Caprese") ?`url('images/caprese.jpg')`:
+                                                                    menu?.['secondo']?.includes("(frittata o strapazzato)") ?`url('images/uovo.jpg')`:
+                                                                        menu?.['secondo']?.includes("Polpettine di vitellone") ?`url('images/polpettineforno.jpg')`:
+                                                                            menu?.['secondo']?.includes("Patate al forno") ?`url('images/patate.jpg')`:
+                                                                                menu?.['secondo']?.includes("Arista di maiale") ?`url('images/arista.jpg')`:
+                                                                                    menu?.['secondo']?.includes("Insalata di pollo") ?`url('images/insalatapollo.jpg')`:
+                                                                                        menu?.['secondo']?.includes("Arrosto di tacchino") ?`url('images/arrostotacchino.jpg')`:
+                                                                                            `url('images/secondo.jpg')`;
                 const contorno =
                     menu?.['contorno']?.includes("Carote a fiammifer") ?`url('images/carote.jpg')`:
-                    menu?.['contorno']?.includes("Fagiolini al vapore") ?`url('images/fagiolini.jpg')`:
-                    menu?.['contorno']?.includes("Zucchine trifolate") ?`url('images/zucchine.jpg')`:
-                    menu?.['contorno']?.includes("Zucchine al vapore") ?`url('images/zucchine.jpg')`:
-                    menu?.['contorno']?.includes("Pomodori ad insalata") ?`url('images/pomodori.jpg')`:
-                    menu?.['contorno']?.includes("Lattuga e pomodori") ?`url('images/lattuga.jpg')`:
-                    menu?.['contorno']?.includes("Verdura cruda") ?`url('images/verdurastagione.jpg')`:
-                    menu?.['contorno']?.includes("Bietoline") ?`url('images/bietoline.jpg')`:
-                    menu?.['contorno']?.includes("Zucchine alla pizzaiola") ?`url('images/zucchinepizzaiola.jpg')`:
-                        `url('images/contorno.jpg')`;
+                        menu?.['contorno']?.includes("Fagiolini al vapore") ?`url('images/fagiolini.jpg')`:
+                            menu?.['contorno']?.includes("Zucchine trifolate") ?`url('images/zucchine.jpg')`:
+                                menu?.['contorno']?.includes("Zucchine al vapore") ?`url('images/zucchine.jpg')`:
+                                    menu?.['contorno']?.includes("Pomodori ad insalata") ?`url('images/pomodori.jpg')`:
+                                        menu?.['contorno']?.includes("Lattuga e pomodori") ?`url('images/lattuga.jpg')`:
+                                            menu?.['contorno']?.includes("Verdura cruda") ?`url('images/verdurastagione.jpg')`:
+                                                menu?.['contorno']?.includes("Bietoline") ?`url('images/bietoline.jpg')`:
+                                                    menu?.['contorno']?.includes("Zucchine alla pizzaiola") ?`url('images/zucchinepizzaiola.jpg')`:
+                                                        `url('images/contorno.jpg')`;
                 const pane = `url('images/pane.jpg')`;
                 const frutta =  menu?.['frutta']?.includes("Macedonia")? `url('images/frutta.jpg')`:`url('images/fruttastagione.jpg')`;
                 if (!menu) return `<div class="card-content"><div class="no-service">Weekend<br>Mensa Chiusa</div></div>`;
@@ -124,8 +124,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 return `
                 <div class="card-content">
                     <h3>${dayName}</h3>
-                    
+<!--
+                    <svg> <use href="assets/icons/chef.svg#chef"></use></svg>
+-->
                     <div class="menu-item" style="--bg-rgb: ${color}; --bg-image: ${primo}">
+                        
                         <span class="label">Primo</span>
                         <div class="content">${menu['primo']}</div>
                     </div>
@@ -221,5 +224,4 @@ document.addEventListener('DOMContentLoaded', () => {
     loadMenu().then();
 
 })
-
 
