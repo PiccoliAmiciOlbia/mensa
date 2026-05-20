@@ -15,7 +15,7 @@ body {
     font-family: sans-serif;
     --bg-rgb: 22, 200, 222;
     /* background-color: var(--bg-color); */
-    background-color: rgb(58 200 255 / 30%);
+    background-color: #fbf7f0;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -29,10 +29,11 @@ body {
 }
 .sole {
     position: absolute;
-    left: -60px;
+    left: 0px;
     width: 83%;
     z-index: -1;
-    top: -30px;
+    top: 114px;
+    object-position: -70px;
     /* animation: movimentoSole 60s ease-in-out infinite; */
 }
 
@@ -117,16 +118,14 @@ header {
 }
 
 header h1 {
-    font-family:  cursive;
+    color: #135fbb;
+    font-family: sans-serif;
     margin: 0;
     font-weight: bold;
-   /* text-transform: uppercase;*/
-    font-size: 1.6rem;
+    /* text-transform: uppercase; */
+    font-size: 2rem;
     letter-spacing: 2px;
-    /*
-    color: var(--gold-accent); !* Testo dorato *!
-    */
-    color: white; /* Testo dorato */
+    /* color: white;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3); /* Leggera ombra per rilievo */
 }
 
@@ -140,7 +139,8 @@ header h1 {
 }
 .today-btn {
     position: sticky;
-    top: 100px
+    top: 100px;
+    text-align: right;
 }
 .calendar-container {
     display: flex;
@@ -195,16 +195,15 @@ header h1 {
 #today {
     display: inline-block;
     padding: 6px 16px;
-    background: #c09060; /* Legno scuro/ottone */
-    color: var(--gold-accent);
+    background: #fddb11;
+    color: #0f3749;
     border-radius: 20px;
     margin: 5px 15px;
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: bold;
     border: 1px solid #906040;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);}
 
 /* Slider delle Card */
 .main-slider {
@@ -365,7 +364,7 @@ h3 {
 .label {
     font-size: 0.7rem;
     font-weight: bold;
-    color: var(--gold-accent); /* Etichette dorate */
+    color: #353c4d; /* Etichette dorate */
     text-transform: uppercase;
     margin-bottom: 6px;
     display: block;
