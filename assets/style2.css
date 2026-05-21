@@ -381,6 +381,6 @@ h3 {
 main {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+   /* overflow-x: hidden;*/
 }
 .no-service { text-align: center; color: rgba(255,255,255,0.5); font-style: italic; font-size: 1rem; }
