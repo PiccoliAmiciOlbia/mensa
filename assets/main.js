@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         menu?.['primo'].includes("Pasta all'olio") ?`url('images/pastaolio.jpg')`:
                                             menu?.['primo'].includes("Risotto alle carote") ?`url('images/risottocarote.jpg')`:
                                                 menu?.['primo'].includes("Torta di ricotta") ?`url('images/tortasalata.jpg')`:
-                                                    menu?.['primo'].includes("Lasagna") ?`url('images/lasagne.jpg')`:
+                                                    menu?.['primo'].includes("Lasagne") ?`url('images/lasagne.jpg')`:
                                                         menu?.['primo'].includes("Pasta alle zucchine") ?`url('images/pastazucchine.jpg')`:
                                                             menu?.['primo'].includes("Pastina in brodo") ?`url('images/minestra.jpg')`:
                                                                 menu?.['primo'].includes("Riso all'olio") ?`url('images/risobianco.jpg')`:
