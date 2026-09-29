@@ -19,7 +19,7 @@
     },
     "mercoledi": {
       "primo": "Passato di legumi con farro o orzo perlato",
-      "secondo": "Sformato di verdure di stagione (zucchine, carciofi, spinaci, etc.)",
+      "secondo": "Sformato di verdure di stagione ",
       "contorno": "N.D.",
       "pane": "Pane",
       "frutta": "Frutta di stagione",
@@ -49,7 +49,7 @@
       "contorno": "Bietoline all'olio",
       "pane": "Pane",
       "frutta": "Frutta di stagione",
-      "merenda": "Yogurt intero bianco o alla frutta (senza coloranti, conservanti, addensanti)"
+      "merenda": "Yogurt intero bianco o alla frutta "
     },
     "martedi": {
       "primo": "Crema di carote e orzo",
@@ -57,7 +57,7 @@
       "contorno": "Patate arrosto",
       "pane": "Pane",
       "frutta": "Frutta di stagione",
-      "merenda": "Succo di frutta (senza coloranti, addensanti o aromi) e biscotto sardo tipo savoiardo"
+      "merenda": "Succo di frutta e biscotto sardo tipo savoiardo"
     },
     "mercoledi": {
       "primo": "Pasta al pomodoro e basilico",
@@ -81,7 +81,7 @@
       "contorno": "Verdura fresca di stagione",
       "pane": "Pane",
       "frutta": "Frutta di stagione",
-      "merenda": "Succo di frutta (senza coloranti, addensanti o aromi) e biscotto sardo tipo savoiardo"
+      "merenda": "Succo di frutta e biscotto sardo tipo savoiardo"
     }
   },
   "settimana_3": {
@@ -107,7 +107,7 @@
       "contorno": "Fagiolini al vapore",
       "pane": "Pane",
       "frutta": "Frutta di stagione",
-      "merenda": "Yogurt intero bianco o alla frutta (senza coloranti, conservanti, addensanti)"
+      "merenda": "Yogurt intero bianco o alla frutta"
     },
     "giovedi": {
       "primo": "Riso con carciofi/zucca/zucchine/spinaci",
