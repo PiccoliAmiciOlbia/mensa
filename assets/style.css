@@ -15,7 +15,6 @@ body {
     height: 100vh;
     overflow: hidden;
     touch-action: pan-y;
-    overflow-x: hidden;
 }
 
 header {
