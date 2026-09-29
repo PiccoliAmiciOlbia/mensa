@@ -128,7 +128,13 @@ header h1 {
     /* color: white;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3); /* Leggera ombra per rilievo */
 }
+header:hover + main > #count {
+    display: inline-block;
+}
 
+header + main > #count {
+    display: none;
+}
 /* Calendario */
 .calendar-wrapper {
     background: transparent; /* Fondo trasparente per vedere lo sfondo body */
