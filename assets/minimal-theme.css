@@ -1,0 +1,206 @@
+/* Tema Minimale per Mensa Piccoli Amici */
+
+:root {
+    --minimal-bg: #ffffff;
+    --minimal-text: #2c3e50;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    
+    /* Colori Pastello per i pasti (soft e differenziati) */
+    --primo-pastello: #fff9db;   /* Giallo chiarissimo */
+    --secondo-pastello: #ebfbee;  /* Verde chiarissimo */
+    --contorno-pastello: #f3f0ff; /* Viola chiarissimo */
+    --pane-pastello: #fff4e6;    /* Arancio chiarissimo */
+    --frutta-pastello: #fff5f5;  /* Rosso chiarissimo */
+}
+
+body.minimal-theme {
+    background-color: var(--minimal-bg);
+    background-image: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%) !important;
+    background-attachment: fixed;
+    color: var(--minimal-text);
+}
+
+body.minimal-theme .sole,
+body.minimal-theme .occhiali,
+body.minimal-theme .ciliegia,
+body.minimal-theme .gelato {
+    display: none !important;
+}
+
+body.minimal-theme header {
+    background: transparent;
+    border-bottom: none;
+    padding: 15px 10px;
+}
+
+body.minimal-theme header h1 {
+    font-size: 1.4rem;
+    color: #444;
+    text-shadow: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+body.minimal-theme .calendar-wrapper {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin-top: 0;
+    z-index: 1000;
+}
+
+body.minimal-theme .slide {
+    background-image: none !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    filter: none !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    box-shadow: none !important;
+    border-radius: 10px;
+    min-width: 55px;
+    padding: 8px;
+}
+
+body.minimal-theme .slide.active {
+    background-color: #fff !important;
+    border-color: rgba(0,0,0,0.1) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05) !important;
+}
+
+body.minimal-theme .slide strong {
+    color: #444 !important;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+body.minimal-theme .slide span {
+    color: #999 !important;
+}
+
+body.minimal-theme .slide.active strong {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+body.minimal-theme .main-slider {
+    padding-top: 10px;
+}
+
+body.minimal-theme .menu-card {
+    background: transparent;
+    box-shadow: none !important;
+    transform: scale(0.95);
+}
+
+body.minimal-theme .menu-card.active {
+    transform: scale(1);
+    margin-top: 10px;
+}
+
+body.minimal-theme .card-content {
+    background-color: var(--glass-bg) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border) !important;
+    color: var(--minimal-text) !important;
+    border-radius: 24px;
+    padding: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.03) !important;
+    min-height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body.minimal-theme .menu-item {
+    background-image: none !important;
+    border-bottom: none !important;
+    padding: 10px 15px;
+    margin-bottom: 6px;
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+body.minimal-theme .menu-item::after {
+    display: none;
+}
+
+body.minimal-theme .menu-item .label {
+    color: rgba(0,0,0,0.4);
+    margin-bottom: 2px;
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+}
+
+body.minimal-theme .menu-item .content {
+    color: #2c3e50 !important;
+    text-shadow: none !important;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+/* Pastelli per i pasti nel tema minimale */
+body.minimal-theme .menu-item:nth-of-type(1) { background-color: var(--primo-pastello) !important; border: 1px solid rgba(255, 236, 179, 0.5) !important; }
+body.minimal-theme .menu-item:nth-of-type(2) { background-color: var(--secondo-pastello) !important; border: 1px solid rgba(200, 230, 201, 0.5) !important; }
+body.minimal-theme .menu-item:nth-of-type(3) { background-color: var(--contorno-pastello) !important; border: 1px solid rgba(225, 190, 231, 0.5) !important; }
+body.minimal-theme .menu-item:nth-of-type(4) { background-color: var(--pane-pastello) !important; border: 1px solid rgba(255, 224, 178, 0.5) !important;}
+body.minimal-theme .menu-item:nth-of-type(5) { background-color: var(--frutta-pastello) !important; border: 1px solid rgba(255, 205, 210, 0.5) !important; }
+
+body.minimal-theme .menu-item {
+    &.primo,&.secondo ,&.merenda , &.contorno {
+        width: 100%!important
+    }
+    &.pane {
+        max-width: calc(20% - 16px);
+        width: 100%;
+    }
+    &.frutta {
+        max-width: calc(67% - 16px);
+        width: 67%;
+    }
+}
+
+body.minimal-theme .today-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    top: 85px;
+}
+
+body.minimal-theme #today,
+body.minimal-theme #theme-switch {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    border-radius: 12px;
+    color: #666;
+    font-weight: 400;
+    padding: 6px 14px;
+    margin: 5px 0;
+}
+
+body.minimal-theme #theme-switch {
+    float: none !important; /* Reset float to use flexbox */
+}
+
+body.minimal-theme #today:active,
+body.minimal-theme #theme-switch:active {
+    background: #fff;
+    transform: translateY(1px);
+}
+
+/* Nascondiamo le immagini nel tema minimale per pulizia estrema */
+body.minimal-theme .food-img {
+    display: none !important;
+}
+
+/* Rendi tutto in una schermata */
+@media (max-height: 700px) {
+    body.minimal-theme header { padding: 5px; }
+    body.minimal-theme .menu-item { padding: 6px 12px; margin-bottom: 4px; }
+    body.minimal-theme .menu-item .content { font-size: 0.95rem; }
+}

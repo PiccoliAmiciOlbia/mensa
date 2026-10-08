@@ -146,7 +146,11 @@ header + main > #count {
 .today-btn {
     position: sticky;
     top: 100px;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 50;
 }
 .calendar-container {
     display: flex;
@@ -198,13 +202,27 @@ header + main > #count {
 }
 
 /* Pulsante OGGI materico */
+#theme-switch {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #e0e0e0;
+    color: #333;
+    border-radius: 20px;
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 #today {
     display: inline-block;
     padding: 6px 16px;
     background: #fddb11;
     color: #0f3749;
     border-radius: 20px;
-    margin: 5px 15px;
+    margin: 5px 0;
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: bold;
@@ -250,8 +268,8 @@ h3 {
 .menu-card:nth-of-type(7n + 3) .card-content { background-color: rgb(166, 199, 153); } /* Verde Scuro */
 .menu-card:nth-of-type(7n + 4) .card-content { background-color: rgb(194, 196, 144); } /* Verde Scuro */
 .menu-card:nth-of-type(7n + 5) .card-content { background-color: rgb(199, 154, 121); } /* Verde Scuro */
-.menu-card:nth-of-type(7n + 6) .card-content { background-color: rgb(180, 175, 180); } /* Verde Scuro */
-.menu-card:nth-of-type(7n + 7) .card-content { background-color: rgb(180, 175, 180); } /* Verde Scuro */
+.menu-card:nth-of-type(7n + 6) .card-content { background-color: rgb(180, 175, 180)!important; min-height: 44vh;justify-content: center; flex-direction: column} /* Verde Scuro */
+.menu-card:nth-of-type(7n + 7) .card-content { background-color: rgb(180, 175, 180) !important;min-height: 44vh;justify-content: center; flex-direction: column } /* Verde Scuro */
 
 .menu-card.active {
     opacity: 1;

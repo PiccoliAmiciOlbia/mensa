@@ -21,6 +21,36 @@ document.addEventListener('DOMContentLoaded', () => {
             const calendar = document.getElementById('calendar');
 
             function init() {
+                // Theme management
+                const themeSwitch = document.getElementById('theme-switch');
+                const themeLink = document.getElementById('theme-link');
+                const body = document.body;
+
+                function setTheme(isMinimal) {
+                    if (isMinimal) {
+                        body.classList.add('minimal-theme');
+                        themeLink.disabled = false;
+                        localStorage.setItem('theme', 'minimal');
+                    } else {
+                        body.classList.remove('minimal-theme');
+                        themeLink.disabled = true;
+                        localStorage.setItem('theme', 'default');
+                    }
+                }
+
+                // Load saved theme
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'minimal') {
+                    setTheme(true);
+                }
+
+                if (themeSwitch) {
+                    themeSwitch.addEventListener('click', () => {
+                        const isMinimal = body.classList.contains('minimal-theme');
+                        setTheme(!isMinimal);
+                    });
+                }
+
                 let d = new Date(startDate);
                 let i = 0;
                 const today = new Date();
@@ -168,34 +198,34 @@ document.addEventListener('DOMContentLoaded', () => {
 <!--
                     <svg> <use href="assets/icons/chef.svg#chef"></use></svg>
 -->
-                    <div class="menu-item" style="--bg-rgb: ${color}; --bg-image: ${primo}">
+                    <div class="menu-item primo" style="--bg-rgb: ${color}; --bg-image: ${primo}">
                         
                         <span class="label">Primo</span>
                         <div class="content">${menu['primo']}</div>
                     </div>
                 
                     ${menu['secondo'] !== 'N.D.' ? `
-                    <div class="menu-item" style="--bg-rgb: ${color}; --bg-image: ${secondo}">
+                    <div class="menu-item secondo" style="--bg-rgb: ${color}; --bg-image: ${secondo}">
                         <span class="label">Secondo</span>
                         <div class="content">${menu['secondo']}</div>
                     </div>` : ''}
                 
                     ${menu['contorno'] !== 'N.D.' ? `
-                    <div class="menu-item" style="--bg-rgb: ${color}; --bg-image: ${contorno}">
+                    <div class="menu-item contorno" style="--bg-rgb: ${color}; --bg-image: ${contorno}">
                         <span class="label">Contorno</span>
                         <div class="content">${menu['contorno']}</div>
                     </div>` : ''}
                 
-                    <div class="menu-item" style="--bg-rgb: ${color}; --bg-image: ${pane}">
+                    <div class="menu-item pane" style="--bg-rgb: ${color}; --bg-image: ${pane}">
                         <span class="label">Pane</span>
                         <div class="content">${menu['pane']}</div>
                     </div>
                 
-                    <div class="menu-item" style="--bg-rgb: ${color}; --bg-image: ${frutta}">
+                    <div class="menu-item frutta" style="--bg-rgb: ${color}; --bg-image: ${frutta}">
                         <span class="label">Frutta</span>
                         <div class="content">${menu['frutta']}</div>
                     </div>
-                    <div class="menu-item" style="--bg-rgb: ${color}; --bg-image: ${merenda}; border-top: 1px solid gray; margin-top:8px">
+                    <div class="menu-item merenda" style="--bg-rgb: ${color}; --bg-image: ${merenda}; border-top: 1px solid gray; margin-top:8px">
                         <span class="label">Merenda</span>
                         <div class="content">${menu['merenda']}</div>
                     </div>
