@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             menu?.['secondo']?.includes("Bocconcini di petto") ?`url('images/bocconcini.jpg')`:
                                 menu?.['secondo']?.includes("Prosciutto cotto") ?`url('images/prosciutto.jpg')`:
                                     menu?.['secondo']?.includes("Scaloppine di maiale") ?`url('images/scalmaialeagrumi.jpg')`:
-                                        menu?.['secondo']?.includes("Platessa o sogliola") ?`url('images/sogliolaoplatessa.jpg')`:
+                                        menu?.['secondo']?.includes("Platessa o sogliola") ?`url('images/platgratinata.jpg')`:
                                             menu?.['secondo']?.includes("Formaggio fresco") ?`url('images/formaggioinv.jpg')`:
                                                 menu?.['secondo']?.includes("Formaggio tenero") ?`url('images/formaggio.jpg')`:
                                                     menu?.['secondo']?.includes("Scaloppine di tacchino") ?`url('images/scaltacchino.jpg')`:
@@ -166,7 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                     menu?.['contorno']?.includes("Pomodori ad insalata") ?`url('images/pomodori.jpg')`:
                                         menu?.['contorno']?.includes("Lattuga e pomodori") ?`url('images/lattuga.jpg')`:
                                             menu?.['contorno']?.includes("Verdura cruda") ?`url('images/verdurastagione.jpg')`:
-                                                menu?.['contorno']?.includes("Bietoline") ?`url('images/bietolineinv.jpg')`:
+                                                menu?.['contorno']?.includes("Bietoline all'olio") ?`url('images/bietolineinv.jpg')`:
+                                                menu?.['contorno']?.includes("Bietoline o cavolfiore") ?`url('images/bietolinecavolfiore.jpg')`:
                                                     menu?.['contorno']?.includes("Zucchine alla pizzaiola") ?`url('images/zucchinepizzaiola.jpg')`:
                                                         menu?.['contorno']?.includes("Insalatina fresca") ?`url('images/insalatina.jpg')`:
                                                             menu?.['contorno']?.includes("Carote grattugiate") ?`url('images/carotegratt.jpg')`:
